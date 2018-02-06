@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>{{ title }}</h1>
+    <p id='number'>Your Number is: {{ number }}</p>
+    <button type="button" class="btn btn-info navbar-btn" onClick="resetHeading()">New Number</button>
+  </body>
+  
+  <script>
+	var output = document.getElementById('number');
+
+	function resetHeading(){
+		output.innerHTML = "Your Number is: " + Math.trunc(Math.random() * 100);
+	} 
+
+</script>
+</html>
